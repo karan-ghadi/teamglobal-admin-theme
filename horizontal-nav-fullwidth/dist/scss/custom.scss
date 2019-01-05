@@ -1,14 +1,10 @@
 // In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
 .topbar {
-  padding: 0 15px;
+
 
   .top-navbar {
     .navbar-nav--tg {
       background-color: rgb(247, 147, 29);
-      cursor: pointer;
-      position: relative;
-      margin-left: 40px;
-      padding: 10px 25px;
 
       &:before {
         content: '';
@@ -22,15 +18,118 @@
       }
     }
 
-    .navbar-nav--tg>.nav-item>.nav-link {
-      color: white;
-      font-size: 18px;
-
-    }
   }
 }
 
 @media (min-width: 767px) {
+  .topbar {
+    padding: 0 15px;
+
+    .top-navbar {
+      .navbar-nav--tg {
+        background-color: rgb(247, 147, 29);
+        cursor: pointer;
+        position: relative;
+        margin-left: 40px;
+        padding: 5px 25px;
+
+        &:before {
+          content: '';
+          left: -25px;
+          position: absolute;
+          top: 50%;
+          margin-top: -7px;
+          width: 1px;
+          height: 14px;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      .navbar-nav--tg>.nav-item>.nav-link {
+        color: white;
+        font-size: 18px;
+
+      }
+    }
+  }
+
+  footer {
+    .footer-wrapper {
+      background: $footer-top-bg;
+      padding: 20px 0;
+
+      .footer-widget {
+        ul {
+          margin-bottom: 0;
+          padding: 0;
+
+          li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 1em;
+            margin-bottom: 1em;
+
+            a {
+              font-size: 14px;
+              color: $footer-link-color;
+              letter-spacing: -0.5px;
+
+              &:hover {
+                color: $footer-link-hover;
+                transition: all 0.3s ease;
+              }
+
+              img {
+                height: 45px;
+              }
+            }
+          }
+        }
+
+        .widget-title {
+          color: $footer-text-color;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 17px;
+          margin: 15px 0;
+          letter-spacing: -0.5px;
+        }
+
+        .footer-social-links {
+          li {
+            a {
+              .fa {
+                color: $footer-link-color;
+                font-size: 14px;
+              }
+
+              &:hover {
+                .fa {
+                  color: $footer-link-hover;
+                  transition: all 0.3s ease;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .footer-copyright {
+      background: $footer-bottom-bg;
+      padding: 10px 0;
+
+      .copyright-text {
+        color: $footer-text-color;
+        font-weight: 500;
+        margin: 0;
+        font-size: 13px;
+      }
+    }
+  }
+
+
   .horizontal-nav {
 
 
@@ -58,7 +157,7 @@
       padding-top: 0px;
 
       img {
-        height: 115px;
+        height: 100px;
         padding: 15px 0;
       }
 
@@ -74,14 +173,14 @@
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li>a {
-    padding: 42px 15px;
+    padding: 35px 15px;
     border-left: 0px;
     border-bottom: 3px solid transparent;
     color: #424242;
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li.tivaLogo a {
-    padding: 26px 15px;
+    padding: 18px 15px;
   }
 
   .horizontal-nav .sidebar-nav #sidebarnav>li:hover>a,

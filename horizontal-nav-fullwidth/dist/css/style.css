@@ -10099,7 +10099,7 @@ Display classes
       margin-right: 5px; }
     .topbar .top-navbar .navbar-nav .nav-item span {
       line-height: 18px;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 500;
       color: #fff;
       padding: 0 5px; }
@@ -10264,7 +10264,7 @@ sidebar navigation
         padding: 10px 35px 10px 15px;
         display: block;
         align-items: center;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600; }
         .sidebar-nav ul li a.active, .sidebar-nav ul li a:hover {
           color: #fb9678; }
@@ -12996,28 +12996,82 @@ File: scss
 
   .hidden-md-down {
     display: none; } }
-.topbar {
-  padding: 0 15px; }
-  .topbar .top-navbar .navbar-nav--tg {
-    background-color: #f7931d;
-    cursor: pointer;
-    position: relative;
-    margin-left: 40px;
-    padding: 10px 25px; }
-    .topbar .top-navbar .navbar-nav--tg:before {
-      content: '';
-      left: -25px;
-      position: absolute;
-      top: 50%;
-      margin-top: -7px;
-      width: 1px;
-      height: 14px;
-      background-color: rgba(255, 255, 255, 0.2); }
-  .topbar .top-navbar .navbar-nav--tg > .nav-item > .nav-link {
-    color: white;
-    font-size: 18px; }
+.topbar .top-navbar .navbar-nav--tg {
+  background-color: #f7931d; }
+  .topbar .top-navbar .navbar-nav--tg:before {
+    content: '';
+    left: -25px;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    width: 1px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.2); }
 
 @media (min-width: 767px) {
+  .topbar {
+    padding: 0 15px; }
+    .topbar .top-navbar .navbar-nav--tg {
+      background-color: #f7931d;
+      cursor: pointer;
+      position: relative;
+      margin-left: 40px;
+      padding: 5px 25px; }
+      .topbar .top-navbar .navbar-nav--tg:before {
+        content: '';
+        left: -25px;
+        position: absolute;
+        top: 50%;
+        margin-top: -7px;
+        width: 1px;
+        height: 14px;
+        background-color: rgba(255, 255, 255, 0.2); }
+    .topbar .top-navbar .navbar-nav--tg > .nav-item > .nav-link {
+      color: white;
+      font-size: 18px; }
+
+  footer .footer-wrapper {
+    background: #E2E2E2;
+    padding: 20px 0; }
+    footer .footer-wrapper .footer-widget ul {
+      margin-bottom: 0;
+      padding: 0; }
+      footer .footer-wrapper .footer-widget ul li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 1em;
+        margin-bottom: 1em; }
+        footer .footer-wrapper .footer-widget ul li a {
+          font-size: 14px;
+          color: #888;
+          letter-spacing: -0.5px; }
+          footer .footer-wrapper .footer-widget ul li a:hover {
+            color: #0072bc;
+            transition: all 0.3s ease; }
+          footer .footer-wrapper .footer-widget ul li a img {
+            height: 45px; }
+    footer .footer-wrapper .footer-widget .widget-title {
+      color: #666;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 17px;
+      margin: 15px 0;
+      letter-spacing: -0.5px; }
+    footer .footer-wrapper .footer-widget .footer-social-links li a .fa {
+      color: #888;
+      font-size: 14px; }
+    footer .footer-wrapper .footer-widget .footer-social-links li a:hover .fa {
+      color: #0072bc;
+      transition: all 0.3s ease; }
+  footer .footer-copyright {
+    background: #afafaf;
+    padding: 10px 0; }
+    footer .footer-copyright .copyright-text {
+      color: #666;
+      font-weight: 500;
+      margin: 0;
+      font-size: 13px; }
+
   .horizontal-nav .sidebar-nav {
     padding: 0px 15px;
     float: right; }
@@ -13035,7 +13089,7 @@ File: scss
       padding-bottom: 0px;
       padding-top: 0px; }
       .navbar-header .navbar-brand img {
-        height: 115px;
+        height: 100px;
         padding: 15px 0; }
       .navbar-header .navbar-brand .light-logo {
         display: none; }
@@ -13044,13 +13098,13 @@ File: scss
         display: inline-block; }
 
   .horizontal-nav .sidebar-nav #sidebarnav > li > a {
-    padding: 42px 15px;
+    padding: 35px 15px;
     border-left: 0px;
     border-bottom: 3px solid transparent;
     color: #424242; }
 
   .horizontal-nav .sidebar-nav #sidebarnav > li.tivaLogo a {
-    padding: 26px 15px; }
+    padding: 18px 15px; }
 
   .horizontal-nav .sidebar-nav #sidebarnav > li:hover > a,
   .horizontal-nav .sidebar-nav #sidebarnav > li.active > a {
