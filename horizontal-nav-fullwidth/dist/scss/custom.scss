@@ -1,6 +1,7 @@
 // In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
 .topbar {
   padding: 0 15px;
+
   .top-navbar {
     .navbar-nav--tg {
       background-color: rgb(247, 147, 29);
@@ -29,48 +30,6 @@
   }
 }
 
-.navbar-header {
-  background: #fff;
-  line-height: 65px;
-  padding-left: 0px;
-  min-width: 70px;
-
-  .navbar-brand {
-    margin-right: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    
-    img{
-      height: 115px;
-      padding: 15px 0;
-    }
-
-    .light-logo {
-      display: none;
-    }
-
-    b {
-      line-height: 50px;
-      display: inline-block;
-    }
-  }
-}
-.horizontal-nav .sidebar-nav #sidebarnav > li > a {
-  padding: 42px 15px;
-  border-left: 0px;
-  border-bottom: 3px solid transparent;
-  color:#424242;
-}
-.horizontal-nav .sidebar-nav #sidebarnav > li.tivaLogo a {
-  padding: 26px 15px;
-}
-.horizontal-nav .sidebar-nav #sidebarnav > li:hover > a, .horizontal-nav .sidebar-nav #sidebarnav > li.active > a {
-  color: #0072bc !important;
-}
-.sidebar-nav ul {
-  margin: 0;
-  padding: 0;
-}
 @media (min-width: 767px) {
   .horizontal-nav {
 
@@ -84,5 +43,54 @@
       padding-left: 15px;
       float: left;
     }
+  }
+
+
+  .navbar-header {
+    background: #fff;
+    line-height: 65px;
+    padding-left: 0px;
+    min-width: 70px;
+
+    .navbar-brand {
+      margin-right: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+
+      img {
+        height: 115px;
+        padding: 15px 0;
+      }
+
+      .light-logo {
+        display: none;
+      }
+
+      b {
+        line-height: 50px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .horizontal-nav .sidebar-nav #sidebarnav>li>a {
+    padding: 42px 15px;
+    border-left: 0px;
+    border-bottom: 3px solid transparent;
+    color: #424242;
+  }
+
+  .horizontal-nav .sidebar-nav #sidebarnav>li.tivaLogo a {
+    padding: 26px 15px;
+  }
+
+  .horizontal-nav .sidebar-nav #sidebarnav>li:hover>a,
+  .horizontal-nav .sidebar-nav #sidebarnav>li.active>a {
+    color: #0072bc !important;
+  }
+
+  .sidebar-nav ul {
+    margin: 0;
+    padding: 0;
   }
 }

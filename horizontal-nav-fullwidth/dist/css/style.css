@@ -13017,46 +13017,47 @@ File: scss
     color: white;
     font-size: 18px; }
 
-.navbar-header {
-  background: #fff;
-  line-height: 65px;
-  padding-left: 0px;
-  min-width: 70px; }
-  .navbar-header .navbar-brand {
-    margin-right: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px; }
-    .navbar-header .navbar-brand img {
-      height: 115px;
-      padding: 15px 0; }
-    .navbar-header .navbar-brand .light-logo {
-      display: none; }
-    .navbar-header .navbar-brand b {
-      line-height: 50px;
-      display: inline-block; }
-
-.horizontal-nav .sidebar-nav #sidebarnav > li > a {
-  padding: 42px 15px;
-  border-left: 0px;
-  border-bottom: 3px solid transparent;
-  color: #424242; }
-
-.horizontal-nav .sidebar-nav #sidebarnav > li.tivaLogo a {
-  padding: 26px 15px; }
-
-.horizontal-nav .sidebar-nav #sidebarnav > li:hover > a, .horizontal-nav .sidebar-nav #sidebarnav > li.active > a {
-  color: #0072bc !important; }
-
-.sidebar-nav ul {
-  margin: 0;
-  padding: 0; }
-
 @media (min-width: 767px) {
   .horizontal-nav .sidebar-nav {
     padding: 0px 15px;
     float: right; }
   .horizontal-nav .navbar-header {
     padding-left: 15px;
-    float: left; } }
+    float: left; }
+
+  .navbar-header {
+    background: #fff;
+    line-height: 65px;
+    padding-left: 0px;
+    min-width: 70px; }
+    .navbar-header .navbar-brand {
+      margin-right: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px; }
+      .navbar-header .navbar-brand img {
+        height: 115px;
+        padding: 15px 0; }
+      .navbar-header .navbar-brand .light-logo {
+        display: none; }
+      .navbar-header .navbar-brand b {
+        line-height: 50px;
+        display: inline-block; }
+
+  .horizontal-nav .sidebar-nav #sidebarnav > li > a {
+    padding: 42px 15px;
+    border-left: 0px;
+    border-bottom: 3px solid transparent;
+    color: #424242; }
+
+  .horizontal-nav .sidebar-nav #sidebarnav > li.tivaLogo a {
+    padding: 26px 15px; }
+
+  .horizontal-nav .sidebar-nav #sidebarnav > li:hover > a,
+  .horizontal-nav .sidebar-nav #sidebarnav > li.active > a {
+    color: #0072bc !important; }
+
+  .sidebar-nav ul {
+    margin: 0;
+    padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */
