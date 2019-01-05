@@ -75,6 +75,10 @@
             color: $white;
             padding: 0 5px;
         }
+        .add-details.navbar-nav>.nav-item>.nav-link span{
+            font-weight: 300;
+            font-size: 12px;
+        }
     }
 
     .dropdown-menu {
