@@ -10103,6 +10103,9 @@ Display classes
       font-weight: 500;
       color: #fff;
       padding: 0 5px; }
+    .topbar .top-navbar .add-details.navbar-nav > .nav-item > .nav-link span {
+      font-weight: 300;
+      font-size: 12px; }
   .topbar .dropdown-menu {
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
     -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
@@ -13126,5 +13129,26 @@ footer .footer-copyright {
   .sidebar-nav ul {
     margin: 0;
     padding: 0; } }
+@media (min-width: 320px) and (max-width: 767px) {
+  .topbar .top-navbar .navbar-nav--tg {
+    background-color: #f7931d;
+    margin-left: 10px; }
+
+  .navbar-header .navbar-brand img {
+    height: 100px;
+    padding: 15px 0; }
+
+  .add-details.navbar-nav > .nav-item > .nav-link {
+    font-size: 16px !important; }
+
+  .add-details.navbar-nav > .nav-item > .nav-link span {
+    display: none; }
+
+  .topbar .top-navbar .navbar-nav > .nav-item > .nav-link {
+    font-size: 14px;
+    line-height: 20px; }
+
+  .left-sidebar {
+    padding-top: 36px; } }
 
 /*# sourceMappingURL=style.css.map */
