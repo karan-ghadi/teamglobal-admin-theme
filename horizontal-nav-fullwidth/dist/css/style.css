@@ -10063,7 +10063,7 @@ Display classes
   .topbar .navbar-collapse {
     padding: 0px; }
   .topbar .top-navbar {
-    min-height: 50px;
+    min-height: 5px;
     padding: 0px; }
     .topbar .top-navbar .dropdown-toggle::after {
       display: none; }
@@ -10090,17 +10090,19 @@ Display classes
         font-size: 14px;
         white-space: nowrap; }
     .topbar .top-navbar .navbar-nav > .nav-item > .nav-link {
-      padding-left: 15px;
-      padding-right: 15px;
-      font-size: 18px;
-      line-height: 50px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 12px;
+      line-height: 16px;
       color: white; }
-    .topbar .top-navbar .navbar-nav > .nav-item > span {
-      line-height: 45px;
-      font-size: 24px;
+    .topbar .top-navbar .navbar-nav > .nav-item > .nav-link > .fa {
+      margin-right: 5px; }
+    .topbar .top-navbar .navbar-nav .nav-item span {
+      line-height: 18px;
+      font-size: 18px;
       font-weight: 500;
       color: #fff;
-      padding: 0 10px; }
+      padding: 0 5px; }
   .topbar .dropdown-menu {
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
     -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
@@ -10262,8 +10264,8 @@ sidebar navigation
         padding: 10px 35px 10px 15px;
         display: block;
         align-items: center;
-        font-size: 14px;
-        font-weight: 400; }
+        font-size: 18px;
+        font-weight: 600; }
         .sidebar-nav ul li a.active, .sidebar-nav ul li a:hover {
           color: #fb9678; }
           .sidebar-nav ul li a.active i, .sidebar-nav ul li a:hover i {
@@ -12994,5 +12996,67 @@ File: scss
 
   .hidden-md-down {
     display: none; } }
+.topbar {
+  padding: 0 15px; }
+  .topbar .top-navbar .navbar-nav--tg {
+    background-color: #f7931d;
+    cursor: pointer;
+    position: relative;
+    margin-left: 40px;
+    padding: 10px 25px; }
+    .topbar .top-navbar .navbar-nav--tg:before {
+      content: '';
+      left: -25px;
+      position: absolute;
+      top: 50%;
+      margin-top: -7px;
+      width: 1px;
+      height: 14px;
+      background-color: rgba(255, 255, 255, 0.2); }
+  .topbar .top-navbar .navbar-nav--tg > .nav-item > .nav-link {
+    color: white;
+    font-size: 18px; }
+
+.navbar-header {
+  background: #fff;
+  line-height: 65px;
+  padding-left: 0px;
+  min-width: 70px; }
+  .navbar-header .navbar-brand {
+    margin-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px; }
+    .navbar-header .navbar-brand img {
+      height: 115px;
+      padding: 15px 0; }
+    .navbar-header .navbar-brand .light-logo {
+      display: none; }
+    .navbar-header .navbar-brand b {
+      line-height: 50px;
+      display: inline-block; }
+
+.horizontal-nav .sidebar-nav #sidebarnav > li > a {
+  padding: 42px 15px;
+  border-left: 0px;
+  border-bottom: 3px solid transparent;
+  color: #424242; }
+
+.horizontal-nav .sidebar-nav #sidebarnav > li.tivaLogo a {
+  padding: 26px 15px; }
+
+.horizontal-nav .sidebar-nav #sidebarnav > li:hover > a, .horizontal-nav .sidebar-nav #sidebarnav > li.active > a {
+  color: #0072bc !important; }
+
+.sidebar-nav ul {
+  margin: 0;
+  padding: 0; }
+
+@media (min-width: 767px) {
+  .horizontal-nav .sidebar-nav {
+    padding: 0px 15px;
+    float: right; }
+  .horizontal-nav .navbar-header {
+    padding-left: 15px;
+    float: left; } }
 
 /*# sourceMappingURL=style.css.map */

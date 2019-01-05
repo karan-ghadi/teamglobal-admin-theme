@@ -7,72 +7,87 @@
 .topbar {
     position: relative;
     z-index: 50;
+
     .navbar-collapse {
         padding: 0px;
     }
+
     .top-navbar {
-        min-height: 50px;
+        min-height: 5px;
         padding: 0px;
+
         .dropdown-toggle::after {
             display: none;
         }
+
         .navbar-header {
-            background: rgba(0,0,0,0.05);
-            line-height: 65px; 
+            background: rgba(0, 0, 0, 0.05);
+            line-height: 65px;
             padding-left: 10px;
             min-width: 70px;
+
             .navbar-brand {
                 margin-right: 0px;
                 padding-bottom: 0px;
                 padding-top: 0px;
+
                 .light-logo {
                     display: none;
                 }
+
                 b {
                     line-height: 50px;
                     display: inline-block;
                 }
             }
         }
-        
+
         .profile-pic {
             white-space: nowrap;
-            img{
+
+            img {
                 width: 30px;
                 border-radius: 100%;
             }
-            span{
+
+            span {
                 font-size: 14px;
                 white-space: nowrap;
             }
         }
+
         .navbar-nav>.nav-item>.nav-link {
-            padding-left: 15px;
-            padding-right: 15px;
-            font-size: 18px;
-            line-height: 50px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 12px;
+            line-height: 16px;
             color: rgba(255, 255, 255, 1);
         }
-        .navbar-nav>.nav-item>span {
-            line-height: 45px;
-            font-size: 24px;
+
+        .navbar-nav>.nav-item>.nav-link>.fa {
+            margin-right: 5px;
+        }
+
+        .navbar-nav .nav-item span {
+            line-height: 18px;
+            font-size: 18px;
             font-weight: 500;
             color: $white;
-            padding: 0 10px;
+            padding: 0 5px;
         }
-        
     }
-    
+
     .dropdown-menu {
         box-shadow: $shadow;
         -webkit-box-shadow: $shadow;
         -moz-box-shadow: $shadow;
         border-color: $border-color;
+
         .dropdown-item {
             padding: 7px 1.5rem;
         }
     }
-    
+
 }
 
 /*******************
@@ -83,6 +98,7 @@ Notify
     position: relative;
     top: -28px;
     right: -7px;
+
     .heartbit {
         position: absolute;
         top: -20px;
@@ -100,6 +116,7 @@ Notify
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
     }
+
     .point {
         width: 6px;
         height: 6px;
@@ -118,18 +135,22 @@ Notify
         -moz-transform: scale(0);
         opacity: 0.0;
     }
+
     25% {
         -moz-transform: scale(0.1);
         opacity: 0.1;
     }
+
     50% {
         -moz-transform: scale(0.5);
         opacity: 0.3;
     }
+
     75% {
         -moz-transform: scale(0.8);
         opacity: 0.5;
     }
+
     100% {
         -moz-transform: scale(1);
         opacity: 0.0;
@@ -141,18 +162,22 @@ Notify
         -webkit-transform: scale(0);
         opacity: 0.0;
     }
+
     25% {
         -webkit-transform: scale(0.1);
         opacity: 0.1;
     }
+
     50% {
         -webkit-transform: scale(0.5);
         opacity: 0.3;
     }
+
     75% {
         -webkit-transform: scale(0.8);
         opacity: 0.5;
     }
+
     100% {
         -webkit-transform: scale(1);
         opacity: 0.0;
@@ -161,13 +186,15 @@ Notify
 
 .app-search {
     margin-left: 13px;
-    line-height: 60px;  
-    .form-control{
+    line-height: 60px;
+
+    .form-control {
         border-radius: 60px;
         border-color: transparent;
         transition: 0.2s ease-in;
         width: 180px;
-        &:focus{
+
+        &:focus {
             width: 300px;
         }
     }
@@ -180,28 +207,36 @@ Megamenu
 .mega-dropdown {
     position: static;
     width: 100%;
+
     .dropdown-menu {
         width: 100%;
         padding: 30px;
         margin-top: 0px;
     }
+
     ul {
         padding: 0px;
+
         li {
             list-style: none;
         }
     }
+
     .carousel-item .container {
         padding: 0px;
     }
+
     .nav-accordion {
         .card {
             margin-bottom: 1px;
         }
+
         .card-header {
             background: $white;
+
             h5 {
                 margin: 0px;
+
                 a {
                     text-decoration: none;
                     color: $body-color;

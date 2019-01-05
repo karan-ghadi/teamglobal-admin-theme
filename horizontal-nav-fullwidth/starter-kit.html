@@ -28,16 +28,9 @@
 	<div class="preloader">
 		<div class="loader">
 			<div class="loader__figure"></div>
-			<!-- <p class="loader__label">Elite admin</p> -->
 		</div>
 	</div>
-	<!-- ============================================================== -->
-	<!-- Main wrapper - style you can find in pages.scss -->
-	<!-- ============================================================== -->
 	<div id="main-wrapper">
-		<!-- ============================================================== -->
-		<!-- Topbar header - style you can find in pages.scss -->
-		<!-- ============================================================== -->
 		<header class="topbar">
 			<nav class="navbar top-navbar navbar-expand-md navbar-dark">
 				<div class="navbar-collapse">
@@ -57,22 +50,37 @@
 							</a>
 						</li>
 					</ul>
+
 					<ul class="navbar-nav my-lg-0">
-						<li class="nav-item dropdown">
-							<a class="nav-link waves-effect waves-dark" href="" target="_blank"ria-haspopup="true" aria-expanded="false">
-									<i class="fa fa-facebook"></i>
+						<li class="nav-item">
+							<a class="nav-link waves-effect waves-dark" href="" target="_blank" ria-haspopup="true" aria-expanded="false">
+									<span>
+										<i class="fa fa-facebook"></i>
+									</span>
 							</a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link waves-effect waves-dark" href="" target="_blank"ria-haspopup="true" aria-expanded="false">
-									<i class="fa fa-youtube"></i>
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-								<a class="nav-link waves-effect waves-dark" href="" target="_blank"ria-haspopup="true" aria-expanded="false">
+						<li class="nav-item">
+							<a class="nav-link waves-effect waves-dark" href="" target="_blank" ria-haspopup="true" aria-expanded="false">
+									<span>
 										<i class="fa fa-youtube"></i>
-								</a>
-							</li>
+									</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link waves-effect waves-dark" href="" target="_blank" ria-haspopup="true" aria-expanded="false">
+								<span>	
+									<i class="fa fa-linkedin"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="navbar-nav my-lg-0 navbar-nav--tg">
+						<li class="nav-item">
+							<a class="nav-link waves-effect waves-dark" href="" target="_blank" ria-haspopup="true" aria-expanded="false" id="lounge-button">
+								TG LOUNGE
+							</a>
+						</li>
 					</ul>
 				</div>
 			</nav>
@@ -81,8 +89,14 @@
 			<!-- Sidebar scroll-->
 			<div class="scroll-sidebar">
 				<!-- Sidebar navigation-->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="starter-kit.html">
+						<img src="dist/images/TeamGlobal.png" alt="homepage" class="dark-logo" />
+						<img src="dist/images/TeamGlobal.png" alt="homepage" class="light-logo" />
+					</a>
+				</div>
 				<nav class="sidebar-nav">
-					<ul id="sidebarnav">
+					<ul id="sidebarnav" >
 						<li class="nav-small-cap">--- PERSONAL</li>
 						<li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu">Dashboard <span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
 							<ul aria-expanded="false" class="collapse">
@@ -267,11 +281,18 @@
 								<li><a href="javascript:void(0)">item 1.4</a></li>
 							</ul>
 						</li>
+
+						<li class="tivaLogo"> 
+							<a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+								<img src="dist/images/TivaLogo.png" alt="TivaLogo" class="img-fluid" />
+							</a>
+						</li>
 					</ul>
 				</nav>
 				<!-- End Sidebar navigation -->
 			</div>
 			<!-- End Sidebar scroll-->
+			<div class="clearfix"></div>
 		</aside>
 		<!-- ============================================================== -->
 		<!-- End Left Sidebar - style you can find in sidebar.scss  -->
